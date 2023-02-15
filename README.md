@@ -1,3 +1,63 @@
+<div>
+  <h1 align="center">Roll Dice game in React 🧑‍💻</h1>
+<h2 style="">Goal:</h2>
+  <ul>
+  <li>
+  Practice rendering component
+  </li>
+  <li>
+  Practicing function / props / state
+  </li>
+    <li>
+  Using setTimeout
+  </li>
+    
+   </ul>
+
+  <p>
+    Screenshot:
+  </p>
+
+  <a href="">
+    <img
+      alt="Rolldice"
+      src="screenshot.jpg"
+    />
+  </a>
+</div>
+
+<hr />
+
+## Requirements
+- NPM
+- React
+
+## Font
+fontawesome
+
+
+## Main Part
+
+`roll and setTimeout`
+
+
+```javascript
+ roll=()=>{
+        const num=["one","two","three","four","five","six"]
+        this.setState({
+            isRolling:true,
+            num1:num[Math.floor(Math.random()*6)],
+            num2:num[Math.floor(Math.random()*6)],
+        
+        })
+      
+        
+       setTimeout(() => {
+        this.setState({isRolling:false})
+          }, 1000);
+         
+    }
+```
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
